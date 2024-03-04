@@ -1,6 +1,7 @@
 $yellow: #f2f1e8;
-$syellow: rgb(240, 237, 229) 4;
-$green: #032615;
+$syellow: #f9f8f1;
+$green: #061f13;
+$glight: #0b3721;
 $light: rgba(0, 0, 0, 0.02);
 
 $primary: $green;
@@ -12,6 +13,7 @@ body {
 }
 
 .page1 {
+  background-color: $syellow;
   h1 {
     font-size: 4rem !important;
     font-weight: 400 !important;
@@ -53,6 +55,159 @@ body {
   background-color: transparent;
   outline: none;
   padding: 2px;
+}
+
+.lgreen {
+  background-color: $glight;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line-container {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.moving-image {
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveonaLine 15s infinite;
+}
+
+@keyframes moveonaLine {
+  from {
+    left: 0;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.cus2 {
+  h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+  }
+  div {
+    letter-spacing: 0.00563rem;
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.45;
+  }
+}
+
+.next {
+  .bg-image {
+    background-image: url(https://assets-global.website-files.com/64f5ef4e323df832a2b508e6/650846da296f7492d6d51735_clay-banks-XvS-uKUoUao-unsplash-p-800.jpg);
+    background-size: cover;
+    background-image: linear-gradient rgba(46, 46, 31, 0), rgba(46, 46, 31, 0.5);
+    background-position: center;
+    position: relative;
+    height: 480px;
+  }
+  p {
+    font-family: Test tiempos headline, Times New Roman, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .btn {
+    border-color: #fff;
+  }
+
+  .btn:hover {
+    border-color: #fff;
+    background-color: transparentize($color: #fff, $amount: 0.9);
+  }
+
+  .bg-image:hover .hide {
+    display: block;
+  }
+}
+
+.next1 {
+  .bg-image {
+    background-image: url(https://assets-global.website-files.com/64f5ef4e323df832a2b508e6/6508483e8e4e3e16cc31e8d3_toa-heftiba-4xe-yVFJCvw-unsplash-p-800.jpg);
+    background-size: cover;
+    background-image: linear-gradient rgba(46, 46, 31, 0), rgba(46, 46, 31, 0.5);
+    background-position: center;
+    position: relative;
+    width: 568px;
+    height: 480px;
+  }
+  p {
+    font-family: Test tiempos headline, Times New Roman, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .btn {
+    border-color: #fff;
+  }
+
+  .btn:hover {
+    border-color: #fff;
+    background-color: transparentize($color: #fff, $amount: 0.9);
+  }
+
+  .bg-image:hover .hide {
+    display: block;
+  }
+}
+
+.next2 {
+  .bg-image {
+    background-image: url(https://assets-global.website-files.com/64f5ef4e323df832a2b508e6/650846767eff201d6752b156_rodeo-project-management-software-b2L3f7ednYE-unsplash-p-1600.jpg);
+    background-size: cover;
+    background-image: linear-gradient rgba(46, 46, 31, 0), rgba(46, 46, 31, 0.5);
+    background-position: center;
+    position: relative;
+    width: 568px;
+    height: 480px;
+  }
+  p {
+    font-family: Test tiempos headline, Times New Roman, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.15;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .btn {
+    border-color: #fff;
+  }
+
+  .btn:hover {
+    border-color: #fff;
+    background-color: transparentize($color: #fff, $amount: 0.9);
+  }
+
+  .bg-image:hover .hide {
+    display: block;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
