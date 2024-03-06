@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important;
   font-weight: 300;
 }
 
@@ -50,10 +50,6 @@ body {
 
 .lgreen {
   background-color: #0b3721;
-}
-
-a {
-  text-decoration: none;
 }
 
 .line-container {
@@ -177,6 +173,48 @@ a {
 }
 .next2 .bg-image:hover .hide {
   display: block;
+}
+
+.blogrow p {
+  etter-spacing: 0.00844rem;
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+.blogrow h2, .blogrow .h2 {
+  letter-spacing: 0.01125rem !important;
+  font-size: 1.5rem !important;
+  line-height: 1.45 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.about {
+  letter-spacing: 0.00844rem;
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.or:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.or:not(:empty)::after {
+  margin-left: 0.25em;
 }
 
 /*!
