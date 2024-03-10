@@ -3,9 +3,11 @@ $syellow: #f9f8f1;
 $green: #061f13;
 $glight: #0b3721;
 $light: rgba(0, 0, 0, 0.02);
+$cyan: rgba(44, 79, 51, 0.16);
 
 $primary: $green;
 $warning: $yellow;
+$info: $cyan;
 
 body {
   font-family: Arial, sans-serif !important;
@@ -236,6 +238,10 @@ a {
   text-align: center;
 }
 
+.content {
+  z-index: 20;
+}
+
 .or::before,
 .or::after {
   content: "";
@@ -249,6 +255,33 @@ a {
 
 .or:not(:empty)::after {
   margin-left: 0.25em;
+}
+
+.productdark {
+  background-color: #2a2525;
+
+  h1 {
+    letter-spacing: -0.08rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  p {
+    letter-spacing: 0.01125rem;
+    font-size: 1.5rem;
+    line-height: 1.45;
+  }
+}
+
+.overlay {
+  background-color: rgba(46, 46, 31, 0.5);
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
